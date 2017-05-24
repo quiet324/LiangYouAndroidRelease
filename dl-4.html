@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn" lang="zh-cn" dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="http://txly2.net/yu" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="播放列表" />
+    <meta name="generator" content="txly2" />
+    <title>绝妙当家</title>
+    <link href="/templates/player/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link href="/media/com_sermonspeaker/css/sermonspeaker.css" rel="stylesheet" type="text/css" />
+    <link href="/media/com_sermonspeaker/css/player.css" rel="stylesheet" type="text/css" />
+    <link href="/templates/player/css/template.css" rel="stylesheet" type="text/css" />
+    <script src="/media/jui/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
+    <script src="/media/jui/js/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="/media/jui/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/media/plg_sermonspeaker_jwplayer6/jwplayer.js" type="text/javascript"></script>
+    <script src="/media/system/js/core.js" type="text/javascript"></script>
+    <script src="/templates/player/js/template.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function clear_all() {
+            if (document.getElementById('filter_books')) {
+                document.getElementById('filter_books').value = 0;
+            }
+            if (document.getElementById('filter_months')) {
+                document.getElementById('filter_months').value = 0;
+            }
+            if (document.getElementById('filter_years')) {
+                document.getElementById('filter_years').value = 0;
+            }
+            if (document.getElementById('filter-search')) {
+                document.getElementById('filter-search').value = "";
+            }
+        }
+        jQuery(function($) {
+            $(".hasTooltip").tooltip({
+                "html": true,
+                "container": "body"
+            });
+        });
+        jwplayer.key = "";
+
+        function ss_play(id) {
+            jwplayer('mediaspace1').playlistItem(id);
+        }
+        jQuery(function($) {
+            $(".hasPopover").popover({
+                "html": true,
+                "trigger": "hover focus",
+                "container": "body"
+            });
+        });
+    </script>
+    <meta property="og:title" content="绝妙当家" />
+    <meta property="og:url" content="http://txly2.net/yu" />
+    <meta property="og:description" content="播放列表" />
+    <meta property="og:site_name" content="播放列表" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="http://txly2.net/images/program_banners/yu_prog_banner.png" />
+
+    <style type="text/css">
+        body.site {
+            border-top: 3px solid #ff6600;
+            background-color: #f4f6f7
+        }
+        
+        a {
+            color: #ff6600;
+        }
+        
+        .navbar-inner,
+        .nav-list>.active>a,
+        .nav-list>.active>a:hover,
+        .dropdown-menu li>a:hover,
+        .dropdown-menu .active>a,
+        .dropdown-menu .active>a:hover,
+        .nav-pills>.active>a,
+        .nav-pills>.active>a:hover,
+        .btn-primary {
+            background: #ff6600;
+        }
+        
+        .navbar-inner {
+            -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1), inset 0 30px 10px rgba(0, 0, 0, .2);
+            -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1), inset 0 30px 10px rgba(0, 0, 0, .2);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1), inset 0 30px 10px rgba(0, 0, 0, .2);
+        }
+    </style>
+    <!--[if lt IE 9]>
+		<script src="/media/jui/js/html5.js"></script>
+	<![endif]-->
+
+
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-72743423-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- Universal Google Analytics Plugin by PB Web Development -->
+
+
+</head>
+
+<body class="site com_sermonspeaker view-serie no-layout no-task itemid-292">
+
+    <!-- Body -->
+    <div class="body">
+        <div class="container">
+            <!-- Header -->
+            <header class="header" role="banner">
+                <div class="header-inner clearfix">
+                    <div class="header-search pull-right">
+
+                    </div>
+                </div>
+            </header>
+
+            <div class="row-fluid">
+                <main id="content" role="main" class="span12">
+                    <!-- Begin Content -->
+
+                    <div id="system-message-container">
+                    </div>
+
+                    <div class="category-list ss-serie-container">
+                        <!-- Comment the pull-down button
+	<div class="">
+		<div class="btn-group pull-right">
+			<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+				<i class="icon-cog"></i>
+				<span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu">
+											</ul>
+		</div>
+-->
+                        <div class="page-header">
+                            <!--			<a href="/yu/serie/32-yu">-->
+                            <h2>绝妙当家</h2>
+                            <!--			</a>-->
+                        </div>
+                        <div class="img-polaroid pull-right item-image">
+                            <a href="/yu/serie/32-yu">
+                                <img src="/images/program_banners/yu_prog_banner.png">
+                            </a>
+                        </div>
+                        <div class="article-info serie-info muted">
+                            <dl class="article-info">
+                                <dt class="article-info-term"></dt>
+                            </dl>
+                        </div>
+                        <div>
+                            <p>没有理由，不需要理由，你就是主角。<br />绝对唯一，绝对独特，你是无可取代。<br />《绝妙当家》，You are so unique！</p>
+                            <p>栏目：<br />星期日　祝你健康<br />星期一　绝妙一周乐<br />星期二　绝妙电影<br />星期三　绝妙各行业<br />星期四　绝妙媳妇看台湾<br />星期五　绝妙小剧场<br />星期六　动绝妙</p>
+                            <p>电邮：<span id="cloak0f9ef814d9b2373cc4350e417c8b4102">该Email地址已收到反垃圾邮件插件保护。要显示它您需要在浏览器中启用JavaScript。</span>
+                                <script type='text/javascript'>
+                                    document.getElementById('cloak0f9ef814d9b2373cc4350e417c8b4102').innerHTML = '';
+                                    var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+                                    var path = 'hr' + 'ef' + '=';
+                                    var addy0f9ef814d9b2373cc4350e417c8b4102 = 'j&#117;&#101;m&#105;&#97;&#111;' + '&#64;';
+                                    addy0f9ef814d9b2373cc4350e417c8b4102 = addy0f9ef814d9b2373cc4350e417c8b4102 + 'l&#105;&#97;ngy&#111;&#117;' + '&#46;' + 'n&#101;t';
+                                    var addy_text0f9ef814d9b2373cc4350e417c8b4102 = 'j&#117;&#101;m&#105;&#97;&#111;' + '&#64;' + 'l&#105;&#97;ngy&#111;&#117;' + '&#46;' + 'n&#101;t';
+                                    document.getElementById('cloak0f9ef814d9b2373cc4350e417c8b4102').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy0f9ef814d9b2373cc4350e417c8b4102 + '\'>' + addy_text0f9ef814d9b2373cc4350e417c8b4102 + '<\/a>';
+                                </script><br />短信：13229966122（注明：绝妙）</p>
+                            <p> </p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div id="ss-serie-player" class="ss-player row-fluid">
+                        <div class="span10 offset1">
+                            <hr />
+                            <div id="playing">
+                                <img id="playing-pic" class="picture" src="/" alt="" />
+                                <span id="playing-duration" class="duration"></span>
+                                <div class="text">
+                                    <span id="playing-title" class="title"></span>
+                                    <span id="playing-desc" class="desc"></span>
+                                </div>
+                                <span id="playing-error" class="error"></span>
+                            </div>
+                            <div id="mediaspace1">Loading Player...</div>
+                            <script type="text/javascript">
+                                jwplayer('mediaspace1').setup({
+                                    playlist: [{
+                                        file: '/ly/audio/2017/yu/yu170524.mp3',
+                                        title: '绝妙当家-20170524',
+                                        description: '',
+                                        duration: '1761',
+                                        image: '/images/Liangyou.png'
+                                    }, {
+                                        file: '/ly/audio/2017/yu/yu170523.mp3',
+                                        title: '绝妙当家-20170523',
+                                        description: '',
+                                        duration: '1760',
+                                        image: '/images/Liangyou.png'
+                                    }, {
+                                        file: '/ly/audio/2017/yu/yu170522.mp3',
+                                        title: '绝妙当家-20170522',
+                                        description: '',
+                                        duration: '1760',
+                                        image: '/images/Liangyou.png'
+                                    }, {
+                                        file: '/ly/audio/2017/yu/yu170521.mp3',
+                                        title: '绝妙当家-20170521',
+                                        description: '',
+                                        duration: '1760',
+                                        image: '/images/Liangyou.png'
+                                    }, {
+                                        file: '/ly/audio/2017/yu/yu170520.mp3',
+                                        title: '绝妙当家-20170520',
+                                        description: '',
+                                        duration: '1760',
+                                        image: '/images/Liangyou.png'
+                                    }, {
+                                        file: '/ly/audio/2017/yu/yu170519.mp3',
+                                        title: '绝妙当家-20170519',
+                                        description: '',
+                                        duration: '1760',
+                                        image: '/images/Liangyou.png'
+                                    }, {
+                                        file: '/ly/audio/2017/yu/yu170518.mp3',
+                                        title: '绝妙当家-20170518',
+                                        description: '',
+                                        duration: '1760',
+                                        image: '/images/Liangyou.png'
+                                    }, {
+                                        file: '/ly/audio/2017/yu/yu170517.mp3',
+                                        title: '绝妙当家-20170517',
+                                        description: '',
+                                        duration: '1760',
+                                        image: '/images/Liangyou.png'
+                                    }, {
+                                        file: '/ly/audio/2017/yu/yu170516.mp3',
+                                        title: '绝妙当家-20170516',
+                                        description: '',
+                                        duration: '1760',
+                                        image: '/images/Liangyou.png'
+                                    }, {
+                                        file: '/ly/audio/2017/yu/yu170515.mp3',
+                                        title: '绝妙当家-20170515',
+                                        description: '',
+                                        duration: '1761',
+                                        image: '/images/Liangyou.png'
+                                    }, {
+                                        file: '/ly/audio/2017/yu/yu170514.mp3',
+                                        title: '绝妙当家-20170514',
+                                        description: '',
+                                        duration: '1760',
+                                        image: '/images/Liangyou.png'
+                                    }, {
+                                        file: '/ly/audio/2017/yu/yu170513.mp3',
+                                        title: '绝妙当家-20170513',
+                                        description: '',
+                                        duration: '1760',
+                                        image: '/images/Liangyou.png'
+                                    }, {
+                                        file: '/ly/audio/2017/yu/yu170512.mp3',
+                                        title: '绝妙当家-20170512',
+                                        description: '',
+                                        duration: '1760',
+                                        image: '/images/Liangyou.png'
+                                    }, {
+                                        file: '/ly/audio/2017/yu/yu170511.mp3',
+                                        title: '绝妙当家-20170511',
+                                        description: '',
+                                        duration: '1760',
+                                        image: '/images/Liangyou.png'
+                                    }, {
+                                        file: '/ly/audio/2017/yu/yu170510.mp3',
+                                        title: '绝妙当家-20170510',
+                                        description: '',
+                                        duration: '1760',
+                                        image: '/images/Liangyou.png'
+                                    }, {
+                                        file: '/ly/audio/2017/yu/yu170509.mp3',
+                                        title: '绝妙当家-20170509',
+                                        description: '',
+                                        duration: '1760',
+                                        image: '/images/Liangyou.png'
+                                    }, {
+                                        file: '/ly/audio/2017/yu/yu170508.mp3',
+                                        title: '绝妙当家-20170508',
+                                        description: '',
+                                        duration: '1760',
+                                        image: '/images/Liangyou.png'
+                                    }, {
+                                        file: '/ly/audio/2017/yu/yu170507.mp3',
+                                        title: '绝妙当家-20170507',
+                                        description: '',
+                                        duration: '1760',
+                                        image: '/images/Liangyou.png'
+                                    }, {
+                                        file: '/ly/audio/2017/yu/yu170506.mp3',
+                                        title: '绝妙当家-20170506',
+                                        description: '',
+                                        duration: '1760',
+                                        image: '/images/Liangyou.png'
+                                    }, {
+                                        file: '/ly/audio/2017/yu/yu170505.mp3',
+                                        title: '绝妙当家-20170505',
+                                        description: '',
+                                        duration: '1760',
+                                        image: '/images/Liangyou.png'
+                                    }],
+                                    width: '100%',
+                                    height: '36',
+                                    primary: "flash",
+                                    autostart: false,
+                                    events: {
+                                        onPlaylistItem: function(event) {
+                                            for (var i = 0; jQuery("#sermon" + i).length; i++) {
+                                                jQuery("#sermon" + i).removeClass("ss-current");
+                                            }
+                                            jQuery("#sermon" + event.index).addClass("ss-current");
+                                            var entry = jwplayer().getPlaylistItem();
+                                            if (entry.duration > 0) {
+                                                time = new Array();
+                                                var hrs = Math.floor(entry.duration / 3600);
+                                                if (hrs > 0) {
+                                                    time.push(hrs);
+                                                }
+                                                var min = Math.floor((entry.duration - hrs * 3600) / 60);
+                                                if (hrs == 0 || min >= 10) {
+                                                    time.push(min);
+                                                } else {
+                                                    time.push("0" + min);
+                                                }
+                                                var sec = entry.duration - hrs * 3600 - min * 60;
+                                                if (sec >= 10) {
+                                                    time.push(sec);
+                                                } else {
+                                                    time.push("0" + sec);
+                                                }
+                                                var duration = time.join(":");
+                                                jQuery("#playing-duration").html(duration);
+                                            } else {
+                                                jQuery("#playing-duration").html("");
+                                            }
+                                            jQuery("#playing-pic").attr("src", entry.image);
+                                            if (entry.image) {
+                                                jQuery("#playing-pic").show();
+                                            } else {
+                                                jQuery("#playing-pic").hide();
+                                            }
+                                            if (entry.error) {
+                                                jQuery("#playing-error").html(entry.error);
+                                                jQuery("#playing-error").show();
+                                            } else {
+                                                jQuery("#playing-error").hide();
+                                            }
+                                            jQuery("#playing-title").html(entry.title);
+                                            jQuery("#playing-desc").html(entry.description);
+                                        }
+                                    }
+                                });
+                            </script>
+                            <hr />
+                        </div>
+                    </div>
+                    <div class="cat-items">
+                        <form action="http://txly2.net/yu#sermons" method="post" id="adminForm" name="adminForm" class="form-inline">
+                            <div class="filters btn-toolbar">
+                                <div class="btn-group pull-right">
+                                    <label class="element-invisible">
+				每页显示数 #			</label>
+                                    <select id="limit" name="limit" class="inputbox input-mini" size="1" onchange="this.form.submit()">
+	<option value="5">5</option>
+	<option value="10">10</option>
+	<option value="15">15</option>
+	<option value="20" selected="selected">20</option>
+	<option value="25">25</option>
+	<option value="30">30</option>
+	<option value="50">50</option>
+	<option value="100">100</option>
+	<option value="0">全部</option>
+</select>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <table class="table table-striped table-hover table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th class="ss-title">
+                                            <a href="#" onclick="Joomla.tableOrdering('title','asc','');return false;" class="hasPopover" title="排序" data-content="点击根据此列排序" data-placement="top">排序<span class="icon-arrow-down-3"></span></a> </th>
+                                        <th class="ss-col ss-dl hidden-phone"></th>
+                                    </tr>
+                                </thead>
+                                <!-- Begin Data -->
+                                <tbody>
+                                    <tr id="sermon0" class="cat-list-row0">
+                                        <td class="ss-title">
+                                            <i class="icon-play pointer hasTooltip" onclick="ss_play(0);return false;" title="播放节目"> </i> <a href="#" class="hasTooltip" onclick="ss_play(0);return false;" title="播放节目">绝妙当家-20170524</a> <span class="list-edit pull-left width-50">
+																																</span>
+                                            <p>绝妙各行业：验屋师（下）</p>
+                                        </td>
+                                        <td class="ss-col ss-dl">
+                                            <a href="/ly/audio/2017/yu/yu170524.mp3?amssource=dl&amssermonid=21996"><i class="icon-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="sermon1" class="cat-list-row1">
+                                        <td class="ss-title">
+                                            <i class="icon-play pointer hasTooltip" onclick="ss_play(1);return false;" title="播放节目"> </i> <a href="#" class="hasTooltip" onclick="ss_play(1);return false;" title="播放节目">绝妙当家-20170523</a> <span class="list-edit pull-left width-50">
+																																</span>
+                                            <p>绝妙电影：欢迎来到德国（上）</p>
+                                        </td>
+                                        <td class="ss-col ss-dl">
+                                            <a href="/ly/audio/2017/yu/yu170523.mp3?amssource=dl&amssermonid=21905"><i class="icon-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="sermon2" class="cat-list-row0">
+                                        <td class="ss-title">
+                                            <i class="icon-play pointer hasTooltip" onclick="ss_play(2);return false;" title="播放节目"> </i> <a href="#" class="hasTooltip" onclick="ss_play(2);return false;" title="播放节目">绝妙当家-20170522</a> <span class="list-edit pull-left width-50">
+																																</span>
+                                            <p>绝妙一周乐：不满族</p>
+                                        </td>
+                                        <td class="ss-col ss-dl">
+                                            <a href="/ly/audio/2017/yu/yu170522.mp3?amssource=dl&amssermonid=21904"><i class="icon-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="sermon3" class="cat-list-row1">
+                                        <td class="ss-title">
+                                            <i class="icon-play pointer hasTooltip" onclick="ss_play(3);return false;" title="播放节目"> </i> <a href="#" class="hasTooltip" onclick="ss_play(3);return false;" title="播放节目">绝妙当家-20170521</a> <span class="list-edit pull-left width-50">
+																																</span>
+                                            <p>祝你健康：戒断与预防</p>
+                                        </td>
+                                        <td class="ss-col ss-dl">
+                                            <a href="/ly/audio/2017/yu/yu170521.mp3?amssource=dl&amssermonid=21903"><i class="icon-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="sermon4" class="cat-list-row0">
+                                        <td class="ss-title">
+                                            <i class="icon-play pointer hasTooltip" onclick="ss_play(4);return false;" title="播放节目"> </i> <a href="#" class="hasTooltip" onclick="ss_play(4);return false;" title="播放节目">绝妙当家-20170520</a> <span class="list-edit pull-left width-50">
+																																</span>
+                                            <p>绝妙生活系列：季节色彩美学</p>
+                                        </td>
+                                        <td class="ss-col ss-dl">
+                                            <a href="/ly/audio/2017/yu/yu170520.mp3?amssource=dl&amssermonid=21902"><i class="icon-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="sermon5" class="cat-list-row1">
+                                        <td class="ss-title">
+                                            <i class="icon-play pointer hasTooltip" onclick="ss_play(5);return false;" title="播放节目"> </i> <a href="#" class="hasTooltip" onclick="ss_play(5);return false;" title="播放节目">绝妙当家-20170519</a> <span class="list-edit pull-left width-50">
+																																</span>
+                                            <p>绝妙小剧场：单手钢琴师</p>
+                                        </td>
+                                        <td class="ss-col ss-dl">
+                                            <a href="/ly/audio/2017/yu/yu170519.mp3?amssource=dl&amssermonid=21662"><i class="icon-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="sermon6" class="cat-list-row0">
+                                        <td class="ss-title">
+                                            <i class="icon-play pointer hasTooltip" onclick="ss_play(6);return false;" title="播放节目"> </i> <a href="#" class="hasTooltip" onclick="ss_play(6);return false;" title="播放节目">绝妙当家-20170518</a> <span class="list-edit pull-left width-50">
+																																</span>
+                                            <p>绝妙热话题：你是文青？</p>
+                                        </td>
+                                        <td class="ss-col ss-dl">
+                                            <a href="/ly/audio/2017/yu/yu170518.mp3?amssource=dl&amssermonid=21661"><i class="icon-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="sermon7" class="cat-list-row1">
+                                        <td class="ss-title">
+                                            <i class="icon-play pointer hasTooltip" onclick="ss_play(7);return false;" title="播放节目"> </i> <a href="#" class="hasTooltip" onclick="ss_play(7);return false;" title="播放节目">绝妙当家-20170517</a> <span class="list-edit pull-left width-50">
+																																</span>
+                                            <p>绝妙各行业：验屋师（上）</p>
+                                        </td>
+                                        <td class="ss-col ss-dl">
+                                            <a href="/ly/audio/2017/yu/yu170517.mp3?amssource=dl&amssermonid=21660"><i class="icon-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="sermon8" class="cat-list-row0">
+                                        <td class="ss-title">
+                                            <i class="icon-play pointer hasTooltip" onclick="ss_play(8);return false;" title="播放节目"> </i> <a href="#" class="hasTooltip" onclick="ss_play(8);return false;" title="播放节目">绝妙当家-20170516</a> <span class="list-edit pull-left width-50">
+																																</span>
+                                            <p>绝妙电影：大路（下）</p>
+                                        </td>
+                                        <td class="ss-col ss-dl">
+                                            <a href="/ly/audio/2017/yu/yu170516.mp3?amssource=dl&amssermonid=21610"><i class="icon-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="sermon9" class="cat-list-row1">
+                                        <td class="ss-title">
+                                            <i class="icon-play pointer hasTooltip" onclick="ss_play(9);return false;" title="播放节目"> </i> <a href="#" class="hasTooltip" onclick="ss_play(9);return false;" title="播放节目">绝妙当家-20170515</a> <span class="list-edit pull-left width-50">
+																																</span>
+                                            <p>绝妙一周乐：倾诉</p>
+                                        </td>
+                                        <td class="ss-col ss-dl">
+                                            <a href="/ly/audio/2017/yu/yu170515.mp3?amssource=dl&amssermonid=21609"><i class="icon-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="sermon10" class="cat-list-row0">
+                                        <td class="ss-title">
+                                            <i class="icon-play pointer hasTooltip" onclick="ss_play(10);return false;" title="播放节目"> </i> <a href="#" class="hasTooltip" onclick="ss_play(10);return false;" title="播放节目">绝妙当家-20170514</a> <span class="list-edit pull-left width-50">
+																																</span>
+                                            <p>祝你健康：K他命</p>
+                                        </td>
+                                        <td class="ss-col ss-dl">
+                                            <a href="/ly/audio/2017/yu/yu170514.mp3?amssource=dl&amssermonid=21608"><i class="icon-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="sermon11" class="cat-list-row1">
+                                        <td class="ss-title">
+                                            <i class="icon-play pointer hasTooltip" onclick="ss_play(11);return false;" title="播放节目"> </i> <a href="#" class="hasTooltip" onclick="ss_play(11);return false;" title="播放节目">绝妙当家-20170513</a> <span class="list-edit pull-left width-50">
+																																</span>
+                                            <p>绝妙生活系列：生活色彩美学</p>
+                                        </td>
+                                        <td class="ss-col ss-dl">
+                                            <a href="/ly/audio/2017/yu/yu170513.mp3?amssource=dl&amssermonid=21607"><i class="icon-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="sermon12" class="cat-list-row0">
+                                        <td class="ss-title">
+                                            <i class="icon-play pointer hasTooltip" onclick="ss_play(12);return false;" title="播放节目"> </i> <a href="#" class="hasTooltip" onclick="ss_play(12);return false;" title="播放节目">绝妙当家-20170512</a> <span class="list-edit pull-left width-50">
+																																</span>
+                                            <p>绝妙小剧场：胸怀普世的鞋匠</p>
+                                        </td>
+                                        <td class="ss-col ss-dl">
+                                            <a href="/ly/audio/2017/yu/yu170512.mp3?amssource=dl&amssermonid=21332"><i class="icon-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="sermon13" class="cat-list-row1">
+                                        <td class="ss-title">
+                                            <i class="icon-play pointer hasTooltip" onclick="ss_play(13);return false;" title="播放节目"> </i> <a href="#" class="hasTooltip" onclick="ss_play(13);return false;" title="播放节目">绝妙当家-20170511</a> <span class="list-edit pull-left width-50">
+																																</span>
+                                            <p>绝妙热话题：吃大餐不发胖</p>
+                                        </td>
+                                        <td class="ss-col ss-dl">
+                                            <a href="/ly/audio/2017/yu/yu170511.mp3?amssource=dl&amssermonid=21331"><i class="icon-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="sermon14" class="cat-list-row0">
+                                        <td class="ss-title">
+                                            <i class="icon-play pointer hasTooltip" onclick="ss_play(14);return false;" title="播放节目"> </i> <a href="#" class="hasTooltip" onclick="ss_play(14);return false;" title="播放节目">绝妙当家-20170510</a> <span class="list-edit pull-left width-50">
+																																</span>
+                                            <p>绝妙各行业：自由作家（下）</p>
+                                        </td>
+                                        <td class="ss-col ss-dl">
+                                            <a href="/ly/audio/2017/yu/yu170510.mp3?amssource=dl&amssermonid=21330"><i class="icon-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="sermon15" class="cat-list-row1">
+                                        <td class="ss-title">
+                                            <i class="icon-play pointer hasTooltip" onclick="ss_play(15);return false;" title="播放节目"> </i> <a href="#" class="hasTooltip" onclick="ss_play(15);return false;" title="播放节目">绝妙当家-20170509</a> <span class="list-edit pull-left width-50">
+																																</span>
+                                            <p>绝妙电影：大路（上）</p>
+                                        </td>
+                                        <td class="ss-col ss-dl">
+                                            <a href="/ly/audio/2017/yu/yu170509.mp3?amssource=dl&amssermonid=21299"><i class="icon-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="sermon16" class="cat-list-row0">
+                                        <td class="ss-title">
+                                            <i class="icon-play pointer hasTooltip" onclick="ss_play(16);return false;" title="播放节目"> </i> <a href="#" class="hasTooltip" onclick="ss_play(16);return false;" title="播放节目">绝妙当家-20170508</a> <span class="list-edit pull-left width-50">
+																																</span>
+                                            <p>绝妙一周乐：秦川抒怀</p>
+                                        </td>
+                                        <td class="ss-col ss-dl">
+                                            <a href="/ly/audio/2017/yu/yu170508.mp3?amssource=dl&amssermonid=21298"><i class="icon-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="sermon17" class="cat-list-row1">
+                                        <td class="ss-title">
+                                            <i class="icon-play pointer hasTooltip" onclick="ss_play(17);return false;" title="播放节目"> </i> <a href="#" class="hasTooltip" onclick="ss_play(17);return false;" title="播放节目">绝妙当家-20170507</a> <span class="list-edit pull-left width-50">
+																																</span>
+                                            <p>祝你健康：常见毒品及危害</p>
+                                        </td>
+                                        <td class="ss-col ss-dl">
+                                            <a href="/ly/audio/2017/yu/yu170507.mp3?amssource=dl&amssermonid=21292"><i class="icon-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="sermon18" class="cat-list-row0">
+                                        <td class="ss-title">
+                                            <i class="icon-play pointer hasTooltip" onclick="ss_play(18);return false;" title="播放节目"> </i> <a href="#" class="hasTooltip" onclick="ss_play(18);return false;" title="播放节目">绝妙当家-20170506</a> <span class="list-edit pull-left width-50">
+																																</span>
+                                            <p>绝妙生活系列：感性美学玩画篇</p>
+                                        </td>
+                                        <td class="ss-col ss-dl">
+                                            <a href="/ly/audio/2017/yu/yu170506.mp3?amssource=dl&amssermonid=21291"><i class="icon-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr id="sermon19" class="cat-list-row1">
+                                        <td class="ss-title">
+                                            <i class="icon-play pointer hasTooltip" onclick="ss_play(19);return false;" title="播放节目"> </i> <a href="#" class="hasTooltip" onclick="ss_play(19);return false;" title="播放节目">绝妙当家-20170505</a> <span class="list-edit pull-left width-50">
+																																</span>
+                                            <p>绝妙小剧场：困境哲学</p>
+                                        </td>
+                                        <td class="ss-col ss-dl">
+                                            <a href="/ly/audio/2017/yu/yu170505.mp3?amssource=dl&amssermonid=21009"><i class="icon-download"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="pagination">
+                                <p class="counter pull-right">
+                                    第1页 共2页 </p>
+                                <ul class="pagination-list">
+                                    <li class="disabled"><a><i class="icon-first"></i></a></li>
+                                    <li class="disabled"><a><i class="icon-previous"></i></a></li>
+                                    <li class="active hidden-phone"><a>1</a></li>
+                                    <li class="hidden-phone"><a title="2" href="/yu?start=20" class="pagenav">2</a></li>
+                                    <li><a title="下页" href="/yu?start=20" class="pagenav"><i class="icon-next"></i></a></li>
+                                    <li><a title="末页" href="/yu?start=20" class="pagenav"><i class="icon-last"></i></a></li>
+                                </ul>
+                            </div>
+                            <input type="hidden" name="task" value="" />
+                            <input type="hidden" name="filter_order" value="title" />
+                            <input type="hidden" name="filter_order_Dir" value="DESC" />
+                            <input type="hidden" name="limitstart" value="" />
+                        </form>
+                    </div>
+            </div>
+
+
+            <!-- End Content -->
+            </main>
+        </div>
+    </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <hr />
+
+            <p class="pull-right">
+                <!--<a href="#top" id="back-top">
+					Back to Top				</a>-->
+            </p>
+            <!--<p>
+				&copy; 2017 播放列表			</p>-->
+        </div>
+    </footer>
+
+</body>
+
+</html>
