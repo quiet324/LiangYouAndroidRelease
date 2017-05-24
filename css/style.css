@@ -17,7 +17,6 @@ body {
 .container {
     width: 100%;
     margin: 0 auto;
-    background: url("../images/bg.jpg") no-repeat;
     background-size: 100% 100%;
 }
 
@@ -100,12 +99,10 @@ body {
 }
 
 .container .icon-android {
-    background: url("../images/android.png") no-repeat;
     background-size: 100% 100%
 }
 
 .container .icon-ios {
-    background: url("../images/iphone-icons.png") 50% 50% no-repeat;
     background-size: cover
 }
 
@@ -130,7 +127,6 @@ body {
     height: 74px;
     font-size: 52px;
     margin: 0;
-    background: url("../images/logoAC.png") no-repeat 0 19px;
     background-size: 100%
 }
 
@@ -153,7 +149,6 @@ body {
 .logo .img {
     width: 100px;
     height: 100px;
-    background: url("../images/logo-icon.png") no-repeat;
     background-size: 100% 100%;
     margin: auto;
     display: block
@@ -169,7 +164,6 @@ body {
 
 .acnya {
     height: 210px;
-    background: url("../images/ac.png") 50% 50% no-repeat;
     width: 182px;
     margin: 0 auto
 }
@@ -186,7 +180,6 @@ body {
 .stamp .img {
     width: 20px;
     height: 20px;
-    background: url("../images/icons.png") no-repeat;
     background-size: 100% 100%;
     display: inline-block
 }
@@ -228,7 +221,6 @@ body {
     height: 90px;
     width: 80px;
     position: absolute;
-    background: url("../images/ac3.png") no-repeat;
     background-size: 100% 100%;
     top: -15px;
     left: -42px
@@ -238,7 +230,6 @@ body {
     height: 20px;
     width: 31px;
     position: absolute;
-    background: url("../images/db.png") no-repeat;
     background-size: 100% 100%;
     top: -11px;
     right: 17px
